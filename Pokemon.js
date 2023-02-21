@@ -36,5 +36,19 @@ class Pokemon {
     }
   }
 
+  class PokemonElectricidad extends Pokemon{
+    constructor(name){
+        super(name, 'Electric')
+    }
+    attack (pokemon){
+      if (pokemon.type === 'Water'){
+        super.attack(pokemon)
+        super.attack(pokemon)
+      }else{
+        super.attack(pokemon)
+      }
+    }
+  }
+
   const charizard = new PokemonFuego('Charizard')
   const squirtle = new PokemonFuego('Squirtle')
