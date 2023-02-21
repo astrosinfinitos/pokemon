@@ -10,24 +10,18 @@ class Pokemon {
     pokemon.hp -= 10;
     console.log(`${this.name} de tipo ${this.type} está atacando a ${pokemon.name} 
       de tipo ${pokemon.type} y le queda de vida ${pokemon.hp}`);
+    if (pokemon.hp == 0) {
+      console.log(`El pokemon ${pokemon.name} de tipo ${pokemon.type} ha fallecido en el campo de batalla.`)
+    } 
   }
 }
-
-const pikachu = new Pokemon("Pikachu", "Eléctrico");
-const bulbasaur = new Pokemon("Bulbasaur", "Planta");
-
-pikachu.attack(bulbasaur);
-pikachu.attack(bulbasaur);
-bulbasaur.attack(pikachu);
-console.log(pikachu.hp); // ??
-console.log(bulbasaur.hp); // ??
 
 class PokemonFuego extends Pokemon {
   constructor(name) {
     super(name, "Fuego");
   }
   attack(pokemon) {
-    if (pokemon.type === "Fuego") {
+    if (pokemon.type === "Planta") {
       super.attack(pokemon);
       super.attack(pokemon);
     } else {
@@ -41,7 +35,7 @@ class PokemonWater extends Pokemon{
         super(name, 'Water')
     }
     attack (pokemon){
-      if (pokemon.type === 'Water'){
+      if (pokemon.type === 'Fuego'){
         super.attack(pokemon)
         super.attack(pokemon)
       }else{
