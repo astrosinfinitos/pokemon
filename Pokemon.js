@@ -63,7 +63,7 @@ class PokemonPlanta extends Pokemon {
     super(name, "Planta");
   }
   attack(pokemon) {
-    if (pokemon.type === "Electrico") {
+    if (pokemon.type === "Electric") {
       super.attack(pokemon);
       super.attack(pokemon);
     } else {
