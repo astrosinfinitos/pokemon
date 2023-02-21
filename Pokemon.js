@@ -78,5 +78,12 @@ class PokemonPlanta extends Pokemon {
   }
 }
 
-const charizard = new PokemonFuego("Charizard");
-const squirtle = new PokemonFuego("Squirtle");
+const charizard = new PokemonFuego('Charizard')
+const squirtle = new PokemonAgua('Squirtle')
+const pikachu = new PokemonElectrico('Pikachu')
+const bulbasur = new PokemonPlanta('Bulbasur')
+
+squirtle.attack(charizard) // ??
+charizard.attack(squirtle) // ??
+pikachu.attack(squirtle) // ??
+bulbasur.attack(pikachu) // ??
