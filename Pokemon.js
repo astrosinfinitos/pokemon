@@ -36,6 +36,14 @@ class PokemonFuego extends Pokemon {
   }
 }
 
+  class PokemonWater extends Pokemon{
+    constructor(name){
+        super(name, 'Water')
+
+  class PokemonElectricidad extends Pokemon{
+    constructor(name){
+        super(name, 'Electric')
+
 class PokemonElectricidad extends Pokemon {
   constructor(name) {
     super(name, "Electric");
