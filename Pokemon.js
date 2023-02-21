@@ -30,7 +30,7 @@ class PokemonFuego extends Pokemon {
   }
 }
 
-class PokemonWater extends Pokemon{
+class PokemonAgua extends Pokemon{
     constructor(name){
         super(name, 'Water')
     }
@@ -74,7 +74,7 @@ class PokemonPlanta extends Pokemon {
 
 const charizard = new PokemonFuego('Charizard')
 const squirtle = new PokemonAgua('Squirtle')
-const pikachu = new PokemonElectrico('Pikachu')
+const pikachu = new PokemonElectricidad('Pikachu')
 const bulbasur = new PokemonPlanta('Bulbasur')
 
 squirtle.attack(charizard) // ??
